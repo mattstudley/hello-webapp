@@ -1,5 +1,17 @@
-Welcome
-{% if message %}
-{{ message }}
-
-{% endif %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Web App</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <form method="post">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Submit">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
